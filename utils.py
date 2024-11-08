@@ -24,6 +24,8 @@ def leer_datos_csv(nombre_archivo):
                 print(f"{atributos}")
         print("\n-------------------------------------")
         print("*** Archivo leido exitosamente ***\n")
+    except FileNotFoundError:
+        print("El archivo no existe")
     except Exception as e:
         print(f"Error al leer los datos: {e}")
 
